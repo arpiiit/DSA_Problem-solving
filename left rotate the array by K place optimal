@@ -1,0 +1,17 @@
+
+//optimal solution-
+reverse(a,a+k);
+reverse(a+k,a+n);
+reverse(a,a+n);
+reverse(int arr[],int start,int end){
+    while(start<=end){
+        int temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+        start++;
+        end--;
+    }
+}
+
+TC-o(2n)
+sc-o(1);
