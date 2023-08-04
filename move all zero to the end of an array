@@ -1,0 +1,30 @@
+//move all zero to the end of an array
+arr[]={1,23,4,0,6,0,7,0,2,0};
+*brute force-
+
+step-1
+
+temp=[];
+for(int i=0;i<n;i++){
+    if(arr[i]!=0){
+        temp.add(arr[i]);
+    }
+}
+
+step-2
+
+for(int i=0;i<temp.size();i++){
+    arr[i]=temp[i]
+}
+
+step-3
+
+noofnonzero=temp.size;
+
+for(int i=noofnonzero;i<n;i++){
+    arr[i]=0;
+}
+
+
+TC-o[n]+o[x]+o[n-x]=o[2n]
+SC-o[n];
