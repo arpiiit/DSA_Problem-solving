@@ -16,3 +16,7 @@ for(int i=0;i<n;i++){
 if(count==1)
   return num;
 }
+
+//TC-0(n^2)
+ 
+
