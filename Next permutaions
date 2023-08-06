@@ -1,0 +1,33 @@
+Next permutaions
+
+arr[]={3 1 2}
+    123
+    132
+    213
+    231
+    312
+    321
+
+arr[]={2,1,5,4,3,0,0}
+
+1-longest prefix match- a[i]<a[i+1]
+2-find > 1, but smallest one
+so that we stay close {5,4,1,0,0}
+       2, 3, 0, 0, 1, 4, 5
+
+brute force-
+
+ind=-1
+for(int n-2;i>=0;i--){
+  if(arr[i]>arr[i-1]){
+  ind=i;
+  break;
+  }
+}
+for(i=n-1;i>=ind;--){
+  if(arr[i]>arr[ind]){
+    swap(arr[i],arr[ind]);
+    break;
+  }
+}
+ 
