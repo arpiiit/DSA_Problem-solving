@@ -1,0 +1,37 @@
+leaders in an array
+
+arr[]={10,22,12,3,0,6}
+-->[22,12,6]
+the last no of an array is always leader element because there is no elements in right.
+
+
+1-brute forse-
+for(i=0;i<n;i++){
+  leader=ture;
+  for(j=i+1;j<n;j++){
+    if(a[j]>a[i]){
+      leader=false;
+      break;
+    }
+  }
+if(leader == true) ans add(a[i]);
+}
+
+
+TC-o(n^2)
+SC-o(n)
+
+2-optimal solution-
+arr>maximum 
+
+maximum=Integer.INT_VALUE;
+for(i=n;i>=0;i--){
+  if(a[i]>maxi){
+    ans.add(a[i]);
+  }
+maxi=max(maxi,a[i]);
+}
+Arrays.sort(ans);
+return ans;
+
+TC-nlogn
