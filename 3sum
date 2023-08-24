@@ -1,0 +1,16 @@
+3 sum problem(remive duplicate)
+brute-
+Set<Integer> set
+for(int i=0;i<n;i++){
+  for(int j=i+1;i<j;j++){
+    for(int j=j+1;k<n;j++){
+      if(arr[i]+arr[j]+arr[k]==0){
+        set<Integer> temp=set{num[i],num[j],num[k]}
+        sort(set);
+        set.add(temp);
+      }
+    }
+  }
+}
+Set<Integer> ans(st.begin)
+return ans
