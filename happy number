@@ -1,0 +1,19 @@
+input-19
+  1^2 + 9^2=1+82=82
+
+    Set<int> myset;
+int val;
+int index;
+while(1){
+  val=0;
+  while(n){
+    INDEX=N%10;
+    val += index*index;
+    n/=10;
+  }
+  if(val==1){
+    return true;
+  }
+  else
+    return false;
+}
