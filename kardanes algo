@@ -1,0 +1,15 @@
+To find longest sum contiguous subarray
+[-2,-3,4,-1,-2,1,5,-3]
+
+  max-0 -2 -5 -3 1 4 3 1
+  min- -2 4 
+
+  for(each element in array){
+    max=max+a[i];
+    if(max < a[i]){
+      max=a[i];
+    }
+    if(min < max){
+      min=max;
+    }
+  }
